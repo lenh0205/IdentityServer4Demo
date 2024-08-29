@@ -1,5 +1,6 @@
 ﻿using IdentityModel.Client;
-using static IdentityModel.OidcConstants;
+using Newtonsoft.Json.Linq;
+using System;
 
 var client = new HttpClient();
 var disco = await client.GetDiscoveryDocumentAsync("https://localhost:5001");
@@ -26,3 +27,19 @@ if (tokenResponse.IsError)
 }
 
 Console.WriteLine(tokenResponse.Json);
+
+
+// call api
+var apiClient = new HttpClient();
+apiClient.SetBearerToken(tokenResponse.AccessToken);
+
+var response = await apiClient.GetAsync("https://localhost:6001/identity");
+if (!response.IsSuccessStatusCode)
+{
+    Console.WriteLine(response.StatusCode);
+}
+else
+{
+    var content = await response.Content.ReadAsStringAsync();
+    Console.WriteLine(JArray.Parse(content));
+}
