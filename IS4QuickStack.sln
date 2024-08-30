@@ -5,9 +5,9 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IS4EmptyDemo", "IS4EmptyDemo\IS4EmptyDemo.csproj", "{0BD92F2A-2672-4BFC-B250-17AC9CBBCC1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTesting", "WebApiTesting\WebApiTesting.csproj", "{D262DA7D-BFC6-4F94-8DF3-A6713352B63A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiTesting", "WebApiTesting\WebApiTesting.csproj", "{D262DA7D-BFC6-4F94-8DF3-A6713352B63A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTesting", "ClientTesting\ClientTesting.csproj", "{90F5E043-BCBA-4631-A85C-36213685605B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientTesting", "ClientTesting\ClientTesting.csproj", "{90F5E043-BCBA-4631-A85C-36213685605B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
